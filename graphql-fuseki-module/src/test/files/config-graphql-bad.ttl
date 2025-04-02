@@ -1,0 +1,68 @@
+## Originally developed by Telicent Ltd.; subsequently adapted, enhanced, and maintained by the National Digital Twin Programme.
+  ##
+  ##  Copyright (c) Telicent Ltd.
+  ##
+  ##  Licensed under the Apache License, Version 2.0 (the "License");
+  ##  you may not use this file except in compliance with the License.
+  ##  You may obtain a copy of the License at
+  ##
+  ##      http://www.apache.org/licenses/LICENSE-2.0
+  ##
+  ##  Unless required by applicable law or agreed to in writing, software
+  ##  distributed under the License is distributed on an "AS IS" BASIS,
+  ##  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ##  See the License for the specific language governing permissions and
+  ##  limitations under the License.
+  ##
+  ##
+  ##  Modifications made by the National Digital Twin Programme (NDTP)
+  ##  © Crown Copyright 2025. This work has been developed by the National Digital Twin Programme
+  ##  and is legally attributed to the Department for Business and Trade (UK) as the governing entity.
+
+PREFIX :        <#>
+PREFIX fuseki:  <http://jena.apache.org/fuseki#>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
+PREFIX tdb2:    <http://jena.apache.org/2016/tdb#>
+PREFIX graphql: <https://ndtp.co.uk/fuseki/modules/graphql#>
+
+:service1 rdf:type fuseki:Service ;
+    fuseki:name "ds" ;
+
+    fuseki:endpoint [ fuseki:operation fuseki:query ; fuseki:name "query" ] ;
+    fuseki:endpoint [ fuseki:operation fuseki:gsp-rw ; fuseki:name "gsp" ] ;
+
+    # Defining multiple GraphQL operations where the configuration is bad in some way
+    fuseki:endpoint [ fuseki:operation graphql:graphql ;
+                      ja:context [ ja:cxtName "graphql:executor" ;
+                                   ja:cxtValue "no.such.Class" ];
+                      fuseki:name "no-such-class" ];
+    fuseki:endpoint [ fuseki:operation graphql:graphql ;
+                      ja:context [ ja:cxtName "graphql:executor" ;
+                                   ja:cxtValue "java.lang.String" ];
+                      fuseki:name "not-required-interface" ];
+    fuseki:endpoint [ fuseki:operation graphql:graphql ;
+                      ja:context [ ja:cxtName "graphql:executor" ;
+                                   ja:cxtValue "uk.gov.dbt.ndtp.jena.graphql.fuseki.ExecutorWithWrongConstructor" ];
+                      fuseki:name "wrong-constructor" ];
+    fuseki:endpoint [ fuseki:operation graphql:graphql ;
+                      ja:context [ ja:cxtName "graphql:executor" ;
+                                   ja:cxtValue "uk.gov.dbt.ndtp.jena.graphql.fuseki.ExecutorWithPrivateConstructor" ];
+                      fuseki:name "private-constructor" ];
+    fuseki:endpoint [ fuseki:operation graphql:graphql ;
+                      ja:context [ ja:cxtName "graphql:executor" ;
+                                   ja:cxtValue "uk.gov.dbt.ndtp.jena.graphql.fuseki.AbstractBadExecutor" ];
+                      fuseki:name "abstract-implementation" ];
+    fuseki:endpoint [ fuseki:operation graphql:graphql ;
+                      ja:context [ ja:cxtName "graphql:executor" ;
+                                   ja:cxtValue "uk.gov.dbt.ndtp.jena.graphql.fuseki.ExecutorNotConstructable" ];
+                      fuseki:name "faulty-constructor" ];
+    fuseki:endpoint [ fuseki:operation graphql:graphql ;
+                      fuseki:name "missing-executor" ];
+
+    fuseki:dataset :dataset ;
+    .
+
+# Local dev
+:dataset rdf:type ja:MemoryDataset .
