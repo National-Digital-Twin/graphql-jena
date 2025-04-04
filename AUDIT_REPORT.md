@@ -42,7 +42,7 @@ All required attributions have been added to [NOTICE.md](NOTICE.md)
 
 | Scanned Files | Plagiarism Risk Detected? | Source Match                                                                                  | Resolution |
 |--------------|--------------------|-----------------------------------------------------------------------------------------------|--------|
-| `GraphQLRequest.java ` | `Yes`              | [source](https://github.com/Unleash/unleash-docker/blob/main/wait-for)                        | Matched parts of code on GitHub   |
+| `GraphQLRequest.java ` | `Yes`              | [source](https://raw.githubusercontent.com/graphql-java-kickstart/graphql-java-servlet/master/graphql-java-kickstart/src/main/java/graphql/kickstart/execution/GraphQLRequest.java)                        | Matched parts of code on GitHub   |
 
 
 Issues Identified and Resolutions:
