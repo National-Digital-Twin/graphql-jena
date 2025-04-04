@@ -22,7 +22,7 @@ Modifications made by the National Digital Twin Programme (NDTP)
     <parent>
         <groupId>uk.gov.dbt.ndtp.jena.graphql</groupId>
         <artifactId>parent</artifactId>
-        <version>0.9.6</version>
+        <version>0.90.0</version>
     </parent>
     <artifactId>graphql-server</artifactId>
     <name>IANode - GraphQL for Apache Jena - Standalone Server</name>
