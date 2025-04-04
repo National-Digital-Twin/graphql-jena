@@ -22,7 +22,7 @@ Modifications made by the National Digital Twin Programme (NDTP)
 
     <groupId>uk.gov.dbt.ndtp.jena.graphql</groupId>
     <artifactId>parent</artifactId>
-    <version>0.9.6</version>
+    <version>0.90.0</version>
     <packaging>pom</packaging>
     <name>IANode - GraphQL for Apache Jena - Parent</name>
     <description>Provides GraphQL extensions for use with Apache Jena</description>
@@ -104,11 +104,11 @@ Modifications made by the National Digital Twin Programme (NDTP)
         <dependency.jena>5.2.0</dependency.jena>
         <dependency.jackson>2.18.3</dependency.jackson>
         <dependency.jersey>3.1.10</dependency.jersey>
-        <dependency.jwt-servlet>1.0.2</dependency.jwt-servlet>
+        <dependency.jwt-servlet>0.90.0</dependency.jwt-servlet>
         <dependency.logback>1.5.18</dependency.logback>
         <dependency.mockito>5.16.1</dependency.mockito>
         <dependency.slf4j>2.0.17</dependency.slf4j>
-        <dependency.secure-agents>0.26.7</dependency.secure-agents>
+        <dependency.secure-agents>0.90.0</dependency.secure-agents>
         <dependency.testng>7.11.0</dependency.testng>
         <dependency.wiremock>3.12.1</dependency.wiremock>
 
