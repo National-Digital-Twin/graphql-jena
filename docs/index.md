@@ -1,6 +1,7 @@
 # GraphQL Extensions for Apache Jena Usage
-
-This documentation provides details on the APIs and Tools in this repository and how to utilise them.
+**Repository:** `graphql-jena`  
+**Description:** `This documentation provides details on the APIs and Tools in this repository and how to utilise them.`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->
 
 Please refer to [Depending on these Modules](../README.md#depending-on-these-modules) for how to declare dependencies on 
 these modules in other projects.
@@ -26,3 +27,9 @@ The `graphql-server` module provides a standalone HTTP server that offers GraphQ
 
 The `graphql-fuseki-module` module provides a [Fuseki Module](fuseki-module.md) that can be added to a Fuseki server
 deployment to allow adding GraphQL endpoints to a Fuseki dataset using Fuseki's configuration syntax.
+
+---
+
+© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the
+governing entity.  
+Licensed under the Open Government Licence v3.0.

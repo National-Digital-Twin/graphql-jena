@@ -1,4 +1,7 @@
 # Quick Start Usage
+**Repository:** `graphql-jena`  
+**Description:** `The document demonstrates how to execute a basic GraphQL query on an RDF dataset using dataset graph APIs`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->
 
 The following is a simple example of using these APIs with our [Dataset](schemas.md#dataset) schema to make a very basic
 GraphQL query against a dataset:
@@ -47,4 +50,8 @@ fuseki:endpoint [ fuseki:operation graphql:graphql ;
 
 See the [Fuseki Module](fuseki-module.md) for more detailed configuration instructions.
 
+---
 
+© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the
+governing entity.  
+Licensed under the Open Government Licence v3.0.

@@ -1,4 +1,7 @@
 # Fuseki GraphQL Module
+**Repository:** `graphql-jena`  
+**Description:** `Describes setup and usage of Fuseki GraphQL Module`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->
 
 The `graphql-fuseki-module` module provides a [Fuseki Module][1] that allows users to add GraphQL endpoints to a Fuseki
 Server.
@@ -138,3 +141,9 @@ your own `ActionProcessor` implementation.  Most likely this will be extending f
 
 [1]: https://jena.apache.org/documentation/fuseki2/fuseki-modules.html
 [2]: https://github.com/graphql/graphql-over-http/blob/main/spec/GraphQLOverHTTP.md
+
+---
+
+© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the
+governing entity.  
+Licensed under the Open Government Licence v3.0.

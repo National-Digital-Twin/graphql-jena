@@ -1,4 +1,7 @@
 # Standalone GraphQL Server for Apache Jena
+**Repository:** `graphql-jena`  
+**Description:** `The document explains how to run and use a standalone JAX-RS-based GraphQL server.`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->
 
 The `graphql-server` module provides a standalone JAX-RS based server that exposes our [schemas](schemas.md) over a RDF
 `DatasetGraph` as provided by Jena.
@@ -62,3 +65,9 @@ The standalone server offers the following GraphQL endpoints:
 - `/dataset/graphql` - GraphQL Queries using the [Dataset](schemas.md#dataset) schema.
 - `/dataset/traversal/graphql` - GraphQL Queries using the [Traversal](schemas.md#traversal) schema.
 - `/dataset/ianode/graphql` - GraphQL Queries using the [IANode](schemas.md#ianode-ies) schema.
+
+---
+
+© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the
+governing entity.  
+Licensed under the Open Government Licence v3.0.
