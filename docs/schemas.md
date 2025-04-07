@@ -1,9 +1,7 @@
-# [File Title]
+# GraphQL for Jena Schemas
 **Repository:** `graphql-jena`  
 **Description:** `The text explains how to use a suite of predefined GraphQL schemas: IANode, Dataset, Traversal, and IANode (IES) — to access, query, and traverse RDF data.`  
 <!-- SPDX-License-Identifier: OGL-UK-3.0 -->
-
-# GraphQL for Jena Schemas
 
 The [IANode APIs](IANode-apis) module `graphql-jena-lib` includes an `uk.gov.dbt.ndtp.jena.graphql.schemas` package that
 contains several predefined GraphQL schemas for accessing RDF data.  In this part of the documentation we describe those
