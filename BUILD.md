@@ -1,4 +1,7 @@
 # Building GraphQL Extensions for Apache Jena
+**Repository:** `graphql-jena`  
+**Description:** `Build instructions for graphql-jena`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->
 
 This project is a Java based project built with Apache Maven.
 
@@ -24,3 +27,7 @@ Logging is disabled in tests but can be enabled with the following:
 ```bash
 $ mvn test -Dlogback.configurationFile=logback-debug.xml
 ```
+
+© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the
+governing entity.  
+Licensed under the Open Government Licence v3.0.
