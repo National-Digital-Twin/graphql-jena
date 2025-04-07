@@ -1,4 +1,7 @@
 # GraphQL for Jena IANode APIs
+**Repository:** `graphql-jena`  
+**Description:** `This file documents the implementation and usage of the GraphQL for Jena IANode APIs, detailing how to execute GraphQL queries over RDF data.`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->
 
 The `graphql-jena-lib` module provides the IANode APIs for executing GraphQL queries over RDF data.
 
@@ -197,3 +200,9 @@ This is also used within the [Fuseki Module](fuseki-module.md) to support the pa
 requests and responses.
 
 [1]: https://www.graphql-java.com/documentation/data-fetching
+
+---
+
+© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the
+governing entity.  
+Licensed under the Open Government Licence v3.0.
