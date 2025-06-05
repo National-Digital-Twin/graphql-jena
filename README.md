@@ -77,37 +77,8 @@ use the APIs provided in these modules to implement your own GraphQL Schemas ove
 
 ## Testing Guide
 
-### Unit Tests
-Unit testing is a software testing method where individual components or modules of an application are tested in isolation to verify their correctness. These components are often the smallest testable parts of the application, such as functions/methods, or class functions.
-
-To perform unit tests, we use SonarQube. This platform allows us to see coverage (and other useful metrics) inside an easy to use yet powerful web interface hosted locally.
-
-### Starting SonarQube Locally
-1. *The following command spins up a docker container for a community edition of SonarQube locally (at time of writing **25.5.0.107428** is the latest version).*
-   ```shell
-   docker run -p 9000:9000 -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true --name sonarqube sonarqube:25.5.0.107428-community
-   ```
-> [!NOTE]
-> The **SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true** environment flag. This is to bypass Elasticsearch bootstrap checks as they, are not necessary for a local setup and can sometimes cause issues during setup.
-
-2. Go to your web browser and navigate to http://localhost:9000. This will bring up the login portal for SonarQube. When logging in for the first time use admin for both the username and password. It will ask you to set a new password for which you can choose anything of preference.
-> [!NOTE]  
-> If you get an **Unexpected application error**, refresh the page (it seems to be to do with an overlay not rendering properly).
-
-3. Select **Create a local project** and give it a name (this should ideally be the exact same name as the repository).
-
-4. On the next page, select the **Use the global setting** option and progress to the next page by clicking **Create project**.
-
-5. To create the token required to analyse the repository with SonarQube, scroll towards the bottom of the **Analysis Method** page and click on Locally.
-
-6. You will be prompted to generate a project token or to use an existing token. For the first time setup select **Generate a project token**, The **Expires in** dropdown will default to 30 days, and then click the **Generate** button.
-
-7. On the next page, click Continue and then under the Run analysis on your project section, select the option that says "Maven".
-
-8. On selecting, the option that best describes your project, follow the steps shown to run a SonarQube analysis (the command provided must be run at the root of the project folder).
-
-> [!WARNING]
-> If you get an error while running this command, then check that your Java version matches the expected Java version of the repository. The error message should inform you which version is expected.
+### Running Unit Tests
+Navigate to the root of the project and run `mvn test` to run the tests for the repository.
 
 ## API Documentation  
 Documentation detailing the relevant configuration and endpoints is provided [here](docs/configuration-secure-agent-graph.md ). 
