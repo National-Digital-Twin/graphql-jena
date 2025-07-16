@@ -75,6 +75,11 @@ use the APIs provided in these modules to implement your own GraphQL Schemas ove
     - Compatible with Java-based projects through Maven dependency management.
     - Designed to work within the National Digital Twin Programme’s Integration Architecture.
 
+## Testing Guide
+
+### Running Unit Tests
+Navigate to the root of the project and run `mvn test` to run the tests for the repository.
+
 ## API Documentation  
 Documentation detailing the relevant configuration and endpoints is provided [here](docs/configuration-secure-agent-graph.md ). 
 

@@ -23,7 +23,7 @@ This project follows **Semantic Versioning (SemVer)** ([semver.org](https://semv
 - Placeholder for upcoming features and enhancements.
 
 ### Fixed
-- Placeholder for bug fixes and security updates.
+- Fix new line linting error in [build](/BUILD.md) documentation.
 
 ### Changed
 - Updated MAINTAINERS.md with updated supplier information.
