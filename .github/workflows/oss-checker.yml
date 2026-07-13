@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Fetch GitHub App token for target repo
         id: target_token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ secrets.OSPO_WORKFLOW_APP_ID }}
           private-key: ${{ secrets.OSPO_WORKFLOW_PRIVATE_KEY }}
@@ -21,7 +21,7 @@ jobs:
 
       - name: Fetch GitHub App token for OSPO source repo (read-only)
         id: ospo_token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ secrets.OSPO_WORKFLOW_APP_ID }}
           private-key: ${{ secrets.OSPO_WORKFLOW_PRIVATE_KEY }}
