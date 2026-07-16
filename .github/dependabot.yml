@@ -27,6 +27,7 @@ updates:
     schedule:
       interval: "weekly"
       day: monday
+    target-branch: develop
     groups:
       patches:
         update-types:
@@ -38,4 +39,5 @@ updates:
     schedule: 
       interval: weekly
       day: monday
+    target-branch: develop
     open-pull-requests-limit: 5
