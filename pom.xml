@@ -26,7 +26,7 @@ Modifications made by the National Digital Twin Programme (NDTP)
     <packaging>pom</packaging>
     <name>IANode - GraphQL for Apache Jena - Parent</name>
     <description>Provides GraphQL extensions for use with Apache Jena</description>
-    <url>https://github.com/National-Digital-Twin/graphql-jena</url>
+    <url>https://github.com/National-Node-Net/graphql-jena</url>
 
     <modules>
         <module>graphql-jena-lib</module>
@@ -39,18 +39,18 @@ Modifications made by the National Digital Twin Programme (NDTP)
         <snapshotRepository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/National-Digital-Twin/graphql-jena</url>
+            <url>https://maven.pkg.github.com/National-Node-Net/graphql-jena</url>
         </snapshotRepository>
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/National-Digital-Twin/graphql-jena</url>
+            <url>https://maven.pkg.github.com/National-Node-Net/graphql-jena</url>
         </repository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:https://github.com/National-Digital-Twin/graphql-jena</connection>
-        <developerConnection>scm:git:ssh://git@github.com/National-Digital-Twin/graphql-jena</developerConnection>
-        <url>https://github.com/National-Digital-Twin/graphql-jena</url>
+        <connection>scm:git:https://github.com/National-Node-Net/graphql-jena</connection>
+        <developerConnection>scm:git:ssh://git@github.com/National-Node-Net/graphql-jena</developerConnection>
+        <url>https://github.com/National-Node-Net/graphql-jena</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -443,7 +443,7 @@ Modifications made by the National Digital Twin Programme (NDTP)
     <repositories>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/National-Digital-Twin/*</url>
+            <url>https://maven.pkg.github.com/National-Node-Net/*</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
