@@ -67,7 +67,7 @@ jobs:
   generate-sbom:
     permissions:
       contents: read
-
+      dependency-graph: read
     name: Generate SPDX SBOM
     runs-on: ubuntu-latest
     needs: [versioning]
