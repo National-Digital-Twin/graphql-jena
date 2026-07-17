@@ -14,7 +14,7 @@ Over time, the following organisations have provided technical expertise, develo
 We are grateful for the collaboration that has helped shape this repository.
 
 ## Individual contributions
-For a list of individual contributors who have made direct commits to this repository, see GitHub’s auto-generated contributor insights: [Contributors](https://github.com/National-Digital-Twin/graphql-jena/graphs/contributors).
+For a list of individual contributors who have made direct commits to this repository, see GitHub’s auto-generated contributor insights: [Contributors](https://github.com/National-Node-Net/graphql-jena/graphs/contributors).
 
 ---  
 
